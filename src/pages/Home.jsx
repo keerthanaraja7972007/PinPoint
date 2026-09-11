@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import mapPreview from "../assets/pinpoint-map-preview.png";
@@ -704,7 +703,7 @@ export default function Home() {
           <p className="text-xs sm:text-sm text-slate-500 mt-5 text-center leading-relaxed max-w-xl mx-auto">
             PinPoint runs entirely on the frontend with zero external database
             dependencies. All marker data and coordinates are cached locally
-            inside your browser's persistent storage.
+            inside your browser&apos;s persistent storage.
           </p>
         </div>
       </section>

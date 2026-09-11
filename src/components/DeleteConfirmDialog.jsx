@@ -15,10 +15,12 @@ export default function DeleteConfirmDialog({ location, onConfirm, onCancel }) {
             <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-red-50">
               <Trash2 className="w-4.5 h-4.5 text-red-500" strokeWidth={2.5} />
             </div>
+
             <h2 className="text-base font-bold text-slate-800">
               Delete Location?
             </h2>
           </div>
+
           <button
             onClick={onCancel}
             aria-label="Close"
@@ -31,9 +33,13 @@ export default function DeleteConfirmDialog({ location, onConfirm, onCancel }) {
         <div className="p-5">
           <div className="flex items-start gap-3 mb-5 p-3 rounded-xl bg-red-50 border border-red-100">
             <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+
             <p className="text-sm text-slate-600">
               Are you sure you want to remove{" "}
-              <span className="font-bold text-slate-800">"{location.name}"</span>?
+              <span className="font-bold text-slate-800">
+                &quot;{location.name}&quot;
+              </span>
+              ?
               This action cannot be undone.
             </p>
           </div>
@@ -46,6 +52,7 @@ export default function DeleteConfirmDialog({ location, onConfirm, onCancel }) {
             >
               Cancel
             </button>
+
             <button
               type="button"
               onClick={() => onConfirm(location.id)}
