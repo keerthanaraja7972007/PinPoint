@@ -58,7 +58,7 @@ Make sure the following are installed:
 - Node.js
 - npm
 
-Check your installed versions:
+Installed Versions:
 
 ```bash
 node -v
